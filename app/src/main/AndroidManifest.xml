@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="training.facemetermobile"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-feature android:name="android.hardware.camera" />
+<uses-feature android:name="android.hardware.camera.autofocus" />
+<uses-permission android:name="android.permission.READ_CALENDAR" />
+<uses-permission android:name="android.permission.WRITE_CALENDAR" />
+<uses-feature android:name="android.hardware.location.gps" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-sdk tools:overrideLibrary="android.support.v17.leanback"/>
+<uses-feature android:glEsVersion="0x00020000" android:required="true" />
+
+<application android:allowBackup="true"
+    android:hardwareAccelerated="false"
+    android:name="android.support.multidex.MultiDexApplication"
+    android:largeHeap="true"
+    android:label="@string/app_name"
+    android:theme="@style/AppTheme"
+    android:icon="@drawable/icon3">
+
+    <activity android:name="training.facemetermobile.Activity.MainActivity" android:label="@string/app_name">
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+    </activity>
+
+    <activity android:name=".Activity.AwesomenessRateActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".Activity.FaceTrackerActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".Activity.CrashActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+    </activity>
+
+
+    <activity android:name=".Activity.FdActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".Activity.FindNearbyActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+    </activity>
+
+
+    <activity android:name=".Activity.HistoryActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".Activity.HitRateActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".Activity.FaceHistory">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".Activity.ListDatabaseActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".Activity.LoginActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".Activity.MemoActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".Activity.EditProfileActivity">
+        <action android:name="android.intent.action.MAIN" />
+    </activity>
+
+    <activity android:name=".Activity.ResetPasswordActivity">
+        <action android:name="android.intent.action.MAIN" />
+    </activity>
+
+    <activity android:name=".Activity.SettingActivity">
+        <action android:name="android.intent.action.MAIN" />
+    </activity>
+
+    <activity android:name=".Activity.SignupActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name=".Activity.TakephotoActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+    </activity>
+
+    <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+        android:theme="@style/Base.Theme.AppCompat"/>
+
+    <service
+        android:name=".Notification.MyFirebaseInstanceIDService">
+        <intent-filter>
+            <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+        </intent-filter>
+    </service>
+
+    <service
+        android:name=".Notification.FirebaseNotificationMsgService">
+        <intent-filter>
+            <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+        </intent-filter>
+    </service>
+
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+    <meta-data android:name="io.fabric.ApiKey" android:value="4b95b75da241b067b0c3c9d2bf9bc4ecbf0e5b9f" /><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <meta-data android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyCI0WNChvN4aUO3Df2qU2Nhj71LiLsAEFc" />
+</application>
+</manifest>

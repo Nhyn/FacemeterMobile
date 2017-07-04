@@ -1,0 +1,2 @@
+json_key_file "/Users/Astra/Documents/Project_Android/FacemeterMobile(GoogleVision)/app" # Path to the json secret file - Follow https://github.com/fastlane/supply#setup to get one
+package_name "training.facemeter" # e.g. com.krausefx.app

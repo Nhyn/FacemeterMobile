@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_view_category_1">
+        <menu>
+            <item
+                android:id="@+id/navigation_item_8"
+                android:checked="true"
+                android:icon="@drawable/icon2"
+                android:title=" " />
+            <item
+                android:id="@+id/navigation_item_9"
+                android:checked="true"
+                android:icon="@drawable/icon2"
+                android:title=" " />
+            <item
+                android:id="@+id/navigation_item_10"
+                android:checked="true"
+                android:icon="@drawable/icon2"
+                android:title=" " />
+            <item
+                android:id="@+id/navigation_item_1"
+                android:checked="true"
+                android:icon="@drawable/profile"
+                android:title="@string/navigation_view_item_1" />
+            <item
+                android:id="@+id/navigation_item_2"
+                android:icon="@drawable/find_nearby"
+                android:title="@string/navigation_view_item_2" />
+            <item
+                android:id="@+id/navigation_item_3"
+                android:icon="@drawable/history"
+                android:title="@string/navigation_view_item_3" />
+            <item
+                android:id="@+id/navigation_item_4"
+                android:icon="@drawable/facial_date"
+                android:title="@string/navigation_view_item_4" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/navigation_item_5"
+        android:icon="@drawable/signin"
+        android:title="@string/navigation_view_item_5" />
+</menu>
